@@ -3,159 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soumya Basu - Resume</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Soumya Basu - AI Engineer & Data Scientist</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #007bff;
+            --text-color: #333333;
+            --bg-color: #f8f9fa;
+            --border-color: #e9ecef;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .contact-info {
+            font-size: 10pt;
+            color: var(--secondary-color);
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 6px;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 14pt;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 4px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .summary-text {
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        .job {
+            margin-bottom: 16px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .company {
+            font-weight: bold;
+            font-size: 12pt;
+            color: var(--primary-color);
+        }
+
+        .date {
+            font-size: 10.5pt;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .job-title {
+            font-weight: 600;
+            font-style: italic;
+            color: var(--secondary-color);
+            margin-bottom: 2px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            text-align: justify;
+        }
+
+        .skills-list li {
+            margin-bottom: 4px;
+        }
+
+        .education-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .edu-details {
+            font-weight: 500;
+        }
+        
+        .edu-institution {
+            font-weight: bold;
+        }
+        
+        /* Print optimization for ATS and PDF exports */
+        @media print {
+            body { background-color: #fff; padding: 0; }
+            .container { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+            a { text-decoration: none; color: #000; }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
+        <header>
             <h1>SOUMYA BASU</h1>
             <div class="contact-info">
                 <a href="mailto:basusoumya366@gmail.com">basusoumya366@gmail.com</a> | 
-                <a href="tel:+91 8336051483">+91 8336051483</a> | 
-                <a href="https://www.linkedin.com/in/soumya-basu141/">LinkedIn</a> | 
-                <a href="https://github.com/s0ul41">GitHub</a>
+                <a href="tel:+918336051483">+91 8336051483</a> | 
+                <a href="https://www.linkedin.com/in/soumya-basu141/" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/s0ul141" target="_blank">GitHub</a>
+            </div>
+        </header>
+
+        <div class="section">
+            <h2>Professional Summary</h2>
+            <p class="summary-text">
+                Data Scientist and AI Engineer specializing in multi-agent LLM orchestration, structured document extraction, and rigorous model evaluation on AWS infrastructure. Proven track record of designing high-volume, secure automation pipelines for enterprise financial and payroll systems, combining generative AI architecture with statistical anomaly detection.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Generative AI & LLMs:</strong> Multi-Agent Systems (Supervisor-Child Orchestration), Retrieval-Augmented Generation (RAG), Hallucination Detection, Prompt Engineering, Amazon Nova (Pro/Lite/Micro), Anthropic Claude (Opus/Sonnet/Haiku).</li>
+                <li><strong>AI Infrastructure & Cloud:</strong> AWS Bedrock (AgentCore, Prompt Management, Flows), AWS Textract, Serverless Architecture (Lambda, EventBridge, DynamoDB).</li>
+                <li><strong>ML Engineering & Analytics:</strong> Statistical Anomaly Detection (EWMA, Modified Z-Score), NLP (TF-IDF), Geospatial Analysis, Python (Pandas, Scikit-learn), SQL.</li>
+                <li><strong>Evaluation & Production:</strong> LLM Benchmarking (Custom Rubrics, F1, Character-Error Rates), Trace-Based Telemetry, Pipeline Reproducibility Analysis, Package Deployment.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Professional Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <span class="company">Quest Global (Contracted to Amazon Payroll Tech)</span>
+                    <span class="date">December 2024 – September 2026</span>
+                </div>
+                <div class="job-title">Data Scientist (May 2025 – Sep 2026) | Data Science Intern (Dec 2024 – Apr 2025)</div>
+                <ul>
+                    <li><strong>Multi-Agent Orchestration:</strong> Architected "Penny," a supervisor-led multi-agent payroll assistant on AWS Bedrock, routing high-stakes parameters to specialized Amazon Nova Lite child agents utilizing AWS-authenticated action groups and strict data disclosure guardrails.</li>
+                    <li><strong>Multilingual Document AI Pipelines:</strong> Engineered the PoCo policy text extraction pipeline by integrating AWS Textract with Claude Opus 4.6, deploying a five-layer semantic matching and exact coordinate recovery algorithm to achieve ~82% extraction accuracy across a golden dataset.</li>
+                    <li><strong>LLM Evaluation & Telemetry:</strong> Developed the Strands Evaluation Framework on AWS AgentCore, deploying trace-based evaluators in Python to automate regression testing for multi-agent tool selection, trajectory, and goal success.</li>
+                    <li><strong>Hallucination Detection Architecture:</strong> Built a zero-retraining counterfactual hallucination detection framework, evaluating 49 combinations of embedding models and distance metrics to achieve an 81.6% F1 score using all-MiniLM-L6-v2 and Cosine distance.</li>
+                    <li><strong>High-Volume Structured Extraction:</strong> Scaled a Spanish garnishment data pipeline to process 44 schema fields across a 73-document benchmark with 83.3% cell-level accuracy, implementing zero-shot null-path routing that correctly identified absent fields at a 93.5% success rate.</li>
+                    <li><strong>Statistical Anomaly Detection (SPACE):</strong> Designed a multi-track anomaly detection engine for enterprise payroll executions, combining deterministic ratio-on-delta rules, modified Z-scores, and EWMA to achieve a 100% detection rate on synthetic anomaly baselines with zero false positives.</li>
+                    <li><strong>Automated Rule Generation:</strong> Executed systematic prompt engineering via the Automated Reasoning Check (ARC) API, testing pre-mapping schema constraints and logic negation to formalize extracted policy text into strict calculation rules.</li>
+                </ul>
             </div>
         </div>
 
         <div class="section">
-            <h2>EDUCATION</h2>
-            <ul>
-                <li>
-                    <strong>Vellore Institute of Technology, Vellore</strong><br>
-                    M.Sc. in Data Science | 8.79 CGPA <span class="date">08/2023-07/2025</span>
-                </li>
-                <li>
-                    <strong>Maulana Abul Kalam Azad University of Technology, West Bengal</strong><br>
-                    B.Sc. in Data Science | 9.44 CGPA <span class="date">09/2020-08/2023</span>
-                </li>
-                <li>
-                    <strong>Kalyani Public School, Barasat</strong><br>
-                    CBSE | Class XII | 70.8% <span class="date">04/2018-03/2020</span>
-                </li>
-                <li>
-                    <strong>The Central Modern School, Barasat</strong><br>
-                    ICSE | Class X | 78.6% <span class="date">04/2008-03/2018</span>
-                </li>
-            </ul>
+            <h2>Education</h2>
+            
+            <div class="education-item">
+                <div>
+                    <div class="edu-institution">Vellore Institute of Technology, Vellore</div>
+                    <div class="edu-details">M.Sc. in Data Science | 8.79 CGPA</div>
+                </div>
+                <div class="date">August 2023 – July 2025</div>
+            </div>
+            
+            <div class="education-item">
+                <div>
+                    <div class="edu-institution">Maulana Abul Kalam Azad University of Technology, West Bengal</div>
+                    <div class="edu-details">B.Sc. in Data Science | 9.44 CGPA</div>
+                </div>
+                <div class="date">September 2020 – August 2023</div>
+            </div>
         </div>
 
-        <div class="section">
-            <h2>SKILLS</h2>
-            <ul>
-                <li><strong>Programming Languages:</strong>  SQL, Python(Pandas, NumPy, Matplotlib, Statsmodels, Seaborn, Keras, Scikit-learn, scipy, Tensorflow, PyTorch, NLTK, re, Transformers), 
-                    R(BSDA, ggplot2, dplyr, ggthemes, readxl, tinytex, knitr), Java.</li>
-                <li><strong>Tools:</strong> Oracle, MySQL, Tableau, Power BI, Excel, Jupyter Notebook, Google Colab, AWS(Sagemaker), RStudio, Visual Studio Code, Git, 
-                    Github, Overleaf, ChatGPT, Claude, Adobe Photoshop, Adobe Illustrator.</li>
-                <li><strong>Technical:</strong> Data Analysis and Visualization, Business Intelligence, ETL processes, Machine Learning, Deep Learning, Image Processing, Natural Language Processing, 
-                    Time Series Analysis, Regression Analysis, Fine Tuning LLMs, Prompt Engineering.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>WORK EXPERIENCE</h2>
-            <ul>
-                <li>
-                    <strong>Machine Learning Intern | Cognifyz Technologies</strong> <span class="date">05/2024-06/2024</span>
-                    <ul>
-                        <li>Developed a regression model with a R-squared value of 95.24% for a restaurant recommendation system.</li>
-                        <li>Performed geospatial analysis to understand customer behavior, improving customer engagement by 20%.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Data Analyst Intern | Edulyt India</strong> <span class="date">01/2024-03/2024</span>
-                    <ul>
-                        <li> Cleaned 100+ rows from a credit banking dataset and extracted customer monthly spend, repay, and due amounts using Python.</li>
-                        <li> Analyzed credit card transactions to identify top spending cities, trends by card type, spending ratios, and gender-based contributions using SQL.</li>
-                        <li> Cleaned 50+ rows of missing credit card data, ensured transaction accuracy, and segmented customers by spend patterns, conducting detailed spend and 
-                            return analysis across categories using Python. </li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Data Science Intern | Let’sGrowMore</strong> <span class="date">01/2024-02/2024</span>
-                    <ul>
-                        <li> Prepared an interactive dashboard using Power Bi on Terrorism dataset, where Middle East and North Africa has highest number of attacks(50,000) for the last 20 years.</li>
-                        <li> Developed an Iterative Dichotomiser 3 (ID3) decision tree from scratch without using pre-existing libraries which gave accuracy of 100% over the iris dataset.</li>
-                        <li> Implemented a predictive language model using RNN which achieved an accuracy of 87%.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Data Science Intern | ThinkAgainLab</strong> <span class="date">11/2022-02/2023</span>
-                    <ul>
-                        <li> Completed projects in descriptive and exploratory data analysis on Uber Dataset using R discovered a 175% increase in NY Uber trips between 5 PM to 7 PM and in summer season.</li>
-                        <li> Executed a comprehensive analysis of HR analysis data to find whether there is any correlation between education level and job satisfaction, revealing a correlation value of-0.01.</li>   
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>PROJECTS</h2>
-            <ul>
-                <li>
-                    <strong>PyroAlert (Ongoing)</strong>
-                    <br>
-                    <ul>
-                        <li>Developing an AI-powered fire detection system utilizing CNN for real-time image and video analysis, identifying and localizing fire hazards.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Potato Disease Classification Using VGG16</strong>
-                    <br>
-                    <ul>
-                        <li>Developed a potato disease classification model using the VGG16 architecture, processing a dataset of potato leaf images to identify diseases like Early Blight and Pink Rot. 
-                            The dataset was pre-processed through resizing, image inversion, and data augmentation techniques, generating over 2500 images per class.</li>
-                        <li>Evaluated the model’s performance using precision 97.94%, recall 97.89%, F1-score 97.88%, test accuracy 97.89%, and confusion matrix, along with ROC and 
-                            Precision-Recall curves for individual classes.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>State-wise Business Comparison and Forecasting</strong>
-                    <br>
-                    <ul>
-                        <li>The data was collected from the Ministry of Corporate Affairs, Government of India, as part of the Open Government Data (OGD) Platform, which provides access to 
-                            various datasets for public use.</li>
-                        <li>Analyzed 28 states of India to find the top 5 principal business activities and liquidity ratio.</li>
-                        <li> Forecasted the growth of the principal business activities over the next 5 years along with comparative analysis across different states.
-                             Designed and deployed a web application using Streamlit, which assists investors.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Generalized Medicine Recommendation System</strong>
-                    <br>
-                    <ul>
-                        <li>Collected data from 150+ patients through surveys, cleaned and pre-processed data, and performed a comprehensive analysis to assess data integrity and distribution.</li>
-                        <li>Implemented a decision tree classifier for disease classification and medication suggestion, achieving 83% accuracy, 75% precision, and 83% recall.</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>EXTRACURRICULAR ACTIVITIES</h2>
-            <ul>
-                <li>Volunteered at the International Conference on Data Management, increasing engagement by 50%.</li>
-                <li>Designed and executed graphic materials for multiple events at VIT.</li>
-            </ul>
-        </div>
-
-       <div class="section certificates">
-            <h2>CERTIFICATES</h2>
-            <ul>
-                <li><a href="https://github.com/s0ul141/resume/blob/main/certi/TATA_.pdf">Tata Group Data Visualisation: Empowering Business with Effective Insights Job Simulation | Forage</a></li>
-                <li><a href="https://github.com/s0ul141/resume/blob/main/certi/Generative%20AI%20with%20Large%20Language%20Models.pdf">Generative AI with Large Language Models | DeepLearning.Ai</a></li>
-                <li><a href="https://github.com/s0ul141/resume/blob/main/certi/Accenture%20North%20America_completion_certificate.pdf">Accenture North America Data Analytics and Visualization Job Simulation | Forage</a></li>
-                <li><a href="https://github.com/s0ul141/resume/blob/main/certi/ArtificialIntelligenceFundamentals_Badge20240805-6-e34p48.pdf">Artificial Intelligence Fundamentals | IBM</a></li>
-                <li><a href="https://github.com/s0ul141/resume/blob/main/certi/IITM_FL_certificate.pdf">Foundational Level in Programming and Data Science | Indian Institute of Technology Madras</a></li>
-                <li><a href="https://github.com/s0ul141/resume/blob/main/certi/CertificateOfCompletion_Career%20Essentials%20in%20Generative%20AI%20by%20Microsoft%20and%20LinkedIn.pdf">Career Essentials in Generative AI | Microsoft</a></li>
-                <li><a href="https://github.com/s0ul141/resume/blob/main/certi/Google%20Business.pdf">Google Business Intelligence | Google</a></li>
-                <li><a href="https://github.com/s0ul141/resume/blob/main/certi/Foundations%20Data_%26_Data_Everywhere_1_0f_8.pdf">Foundations: Data & Data Everywhere | Google</a></li>
-                <li><a href="https://github.com/s0ul141/resume/blob/main/certi/NLP%20with%20Python%20for%20Machine%20Learning%20Essential%20Training.pdf">NLP with Python for Machine Learning Essential Training | LinkedIn</a></li>
-                <li><a href="https://github.com/s0ul141/resume/blob/main/certi/Business-Intelligence-using-Power-BI_Your-Certificate-for-Business-Intelligence-using-Power-BI_Soumya-Basu.pdf">Basic to Advance Microsoft Power Bi | Skill Nation</a></li>
-                <li><a href="https://github.com/s0ul141/resume/blob/main/certi/Introduction_to_Data_Science_Badge.pdf">Introduction to Data Science | Cisco</a></li>
-                <li><a href="https://github.com/s0ul141/resume/blob/main/certi/Ml_and_data_science_by%20Udemy.pdf">Complete Machine Learning and Data Science Bootcamp 2023 | Udemy</a></li>
-            </ul>
-        </div>
     </div>
 </body>
 </html>
